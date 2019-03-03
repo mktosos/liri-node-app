@@ -55,42 +55,32 @@ axios
 // }
     else if (process.argv[2]===`movie-this`){
         axios
-  .get("http://www.omdbapi.com/?apikey=trilogy&" + process.argv[3])
+  .get("http://www.omdbapi.com/?apikey=trilogy&t=" + process.argv[3])
   .then(function(response) {
-    console.log("Headliner is",response.data[0].lineup[0]); //remove [0]for complete object
-    for (i=0; i<response.data.length; i++){
-        console.log(response.data[i].venue.name);
-        console.log(response.data[i].venue.city,',',response.data[i].venue.country);
-        console.log(dateFormat(response.data[i].datetime, "dddd, mmmm dS, yyyy, h:MM TT"))
-    }
+    console.log(response); 
   })
   .catch(function(error) {
     if (error.response) {
-      // The request was made and the server responded with a status code
-      // that falls out of the range of 2xx
       console.log(error.response.data);
       console.log(error.response.status);
       console.log(error.response.headers);
     } else if (error.request) {
-      // The request was made but no response was received
-      // `error.request` is an object that comes back with details pertaining to the error that occurred.
       console.log(error.request);
     } else {
-      // Something happened in setting up the request that triggered an Error
       console.log("Error", error.message);
     }
     console.log(error.config);
   });
  } 
 
-    }
+    
   
 
-http://www.omdbapi.com/?apikey=trilogy&
+//http://www.omdbapi.com/?apikey=trilogy&
 
 // * `concert-this` working i think******   npm install dateformat
 
-// * `spotify-this-song`
+// * `spotify-this-song`***needs work/ not working
 
 // * `movie-this`
 
