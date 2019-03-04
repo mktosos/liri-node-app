@@ -7,18 +7,18 @@ This project allows a user to search for movie info using the OMDB API, concerts
 example request: node liri.js movie-this harry potter
 
 Sceenshot images of app running different parameters.
-[ app screenshot](/images/concert-this.png)
-[ app screenshot](/images/concert-this2.png)
-[ app screenshot](/images/do-what-it-says.png)
-[ app screenshot](/images/do-what-it-says2.png)
-[ app screenshot](/images/do-what-it-says3.png)
-[ app screenshot](/images/movie-this.png)
-[ app screenshot](/images/movie-this2.png)
+[ app screenshot concert-this](/images/concert-this.png)
+[ app screenshot concert-this2](/images/concert-this2.png)
+[ app screenshot do-what-it-says](/images/do-what-it-says.png)
+[ app screenshot do-what-it-says2](/images/do-what-it-says2.png)
+[ app screenshot do-what-it-says3](/images/do-what-it-says3.png)
+[ app screenshot movie-this](/images/movie-this.png)
+[ app screenshot movie-this2](/images/movie-this2.png)
 
 Known issues: 
 Spotify search not working properly.
 
-The project uses Axios and API access to get data sets which are parsed for specific key values to display via console.log in the terminal. This application is run completely in the terminal uning node.js and required modules, some installed using NPM install.
+The project uses Axios and API access to get data sets which are parsed for specific key values to display via console.log in the terminal. This application is run completely in the terminal uning node.js and required modules, some installed using NPM install. API keys for spotify are kept in a .gitignore(d) .env file to keep them private.
 
 
 Credits: The game project student developer is Mike Taniguchi.
