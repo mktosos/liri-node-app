@@ -16,7 +16,7 @@ Sceenshot images of app running different parameters.
 *[ app screenshot movie-this2](/images/movie-this2.png)
 
 Known issues: 
-Spotify search not working properly.
+Spotify search not working properly. TypeError: Spotify is not a constructor. 
 
 The project uses Axios and API access to get data sets which are parsed for specific key values to display via console.log in the terminal. This application is run completely in the terminal uning node.js and required modules, some installed using NPM install. API keys for spotify are kept in a .gitignore(d) .env file to keep them private.
 

@@ -1,11 +1,12 @@
 require("dotenv").config();
 var keys = require("./keys.js");
 var axios = require("axios");
- //var spotify = new Spotify(keys.spotify);
+var spotify = new Spotify(keys.spotify);
+var Spotify = require('node-spotify-api');
+ 
 var dateFormat = require('dateformat');
 var now = new Date();
 var fs = require("fs");
-// var firstTime = true;
 mainFunction();
  
 function mainFunction(action,search){
@@ -139,7 +140,12 @@ function mainFunction(action,search){
 
         });
     } 
-    // else if (process.argv[2]===`spotify-this-song`){
+    else if (process.argv[2]===`spotify-this-song`){
+        spotify.search({ type: 'track', query: 'All the Small Things'}, function(err, data) {
+            if (err) {
+              return console.log('Error occured: ' + err);
+            }
+        });    
     //     function spotif(){
     //         // var songId = process.argv.slice(3).join(” “);
     //         var Spotify = require('node-spotify-api');
@@ -167,8 +173,5 @@ function mainFunction(action,search){
         //     });
         //    };   
     // }
+    }
 }
-
-
-// * `spotify-this-song`***needs work/ not working
-
