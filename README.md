@@ -1,15 +1,24 @@
 # liri-node-app
 This project allows a user to search for movie info using the OMDB API, concerts by artists with Bands in Town API, and songs from Spotify API. The search parameters are inputed in the terminal in the format: node liri.js <parameter1 - action> <parameter2 - name>. Action commands are:
-* `concert-this`
-* `spotify-this-song`
-* `movie-this`
-* `do-what-it-says`
+`concert-this`
+`spotify-this-song`
+`movie-this`
+`do-what-it-says`
 example request: node liri.js movie-this harry potter
+
+Sceenshot images of app running different parameters.
+[ app screenshot](/images/concert-this.png)
+[ app screenshot](/images/concert-this2.png)
+[ app screenshot](/images/do-what-it-says.png)
+[ app screenshot](/images/do-what-it-says2.png)
+[ app screenshot](/images/do-what-it-says3.png)
+[ app screenshot](/images/movie-this.png)
+[ app screenshot](/images/movie-this2.png)
 
 Known issues: 
 Spotify search not working properly.
 
-The project uses API access to get data sets which are parsed for specific key values to display via console.log in the terminal. This application is run completely in the terminal uning node.js and required modules, some installed using NPM install.
+The project uses Axios and API access to get data sets which are parsed for specific key values to display via console.log in the terminal. This application is run completely in the terminal uning node.js and required modules, some installed using NPM install.
 
 
 Credits: The game project student developer is Mike Taniguchi.
